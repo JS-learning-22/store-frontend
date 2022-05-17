@@ -1,0 +1,34 @@
+body {
+  padding: 0px;
+  margin: 10px;
+}
+
+ul{
+  list-style: none; /* Para quitar los puntos de las listas*/
+  padding: 0px; /*Sobreescribir padding por defecto*/
+  margin: 0px; /*Sobreescribir margin por defecto*/
+}
+
+.navbar{
+  display: flex; /* Pasa la lista a horizontal*/
+  justify-content: space-between; /* Justifica horizontalmente*/
+}
+
+.mainButton {
+  font-size: medium; /*Tamaño del boton*/
+  background-color: black;
+  color: aliceblue;
+  border: 0px; /*Quitar los bordes*/
+  border-radius: 10px; /*Bordes redondeados*/
+  padding: 5px; /*Margen entre la letra y el borde*/
+  box-shadow: 2px 2px gray; /*Sombra del boton*/
+  font-weight: bolder; /*letra con Negrilla*/
+}
+
+/*Modificadores de clase cuando se pone : */
+/*Modificador hover es cuando el curso pasa por encima*/
+.mainButton:hover{
+  cursor: pointer; /*Para cambiar el curso por la manito cuando pase por encima*/
+  box-shadow: 3px 3px gray; /*Sombra del boton*/  
+  transform: scale(1.1); /*Tamaño del boton, 1.1 quiere decir que se aumenta el 10%*/
+}

@@ -1,6 +1,6 @@
 body {
   padding: 0px;
-  margin: 10px;
+  margin: 0px;
 }
 
 ul{
@@ -12,12 +12,19 @@ ul{
 .navbar{
   display: flex; /* Pasa la lista a horizontal*/
   justify-content: space-between; /* Justifica horizontalmente*/
+  padding: 10px;
+  background-color: rgb(217, 217, 221); /*Color fondo del navbar*/
+  border-bottom: 2px solid gray; /*Borde inferior del navbar*/
 }
 
-.mainButton {
+.navbar > li {
+  display: flex;
+  align-items: center;
+}
+
+.button{
+  width: 100px;
   font-size: medium; /*Tamaño del boton*/
-  background-color: black;
-  color: aliceblue;
   border: 0px; /*Quitar los bordes*/
   border-radius: 10px; /*Bordes redondeados*/
   padding: 5px; /*Margen entre la letra y el borde*/
@@ -27,8 +34,48 @@ ul{
 
 /*Modificadores de clase cuando se pone : */
 /*Modificador hover es cuando el curso pasa por encima*/
-.mainButton:hover{
+.button:hover{
   cursor: pointer; /*Para cambiar el curso por la manito cuando pase por encima*/
-  box-shadow: 3px 3px gray; /*Sombra del boton*/  
   transform: scale(1.1); /*Tamaño del boton, 1.1 quiere decir que se aumenta el 10%*/
 }
+
+.mainButton {
+  background-color: #4CAF50;
+  color: aliceblue;
+}
+
+.secondaryButton {
+  background-color: #f44336;
+  color: aliceblue;
+}
+
+.search{
+  background-color: white;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 300px; /*Ancho del recuadro buscar*/
+  display: flex; /*Organizar los elementos internos*/
+  justify-content: space-between;
+  box-shadow: 2px 2px gray; /*Sombra del boton*/
+}
+
+.search > input{ /*Todos los input que esten dentro de esta clase*/
+ outline: none;
+ border: none;
+}
+
+.search:focus-within{
+  border: 1px solid red; /*El borde cambia de color cuando pasa el cursor*/
+}
+
+.icon:hover {
+  cursor: pointer; /*Para cambiar el curso por la manito cuando pase por encima*/
+  transform: scale(1.2); /*Tamaño del boton, 1.1 quiere decir que se aumenta el 10%*/
+  color: #f44336;
+}
+
+.logo{
+  height: 70px;
+}
+

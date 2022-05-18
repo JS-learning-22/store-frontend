@@ -79,3 +79,29 @@ ul{
   height: 70px;
 }
 
+.containerMain{
+  display: flex;
+  justify-content: center;
+}
+
+.containerImg{
+  margin: 10px;
+  justify-content: center;
+}
+
+.containerImg:hover{
+  transform: scale(1.1);
+}
+
+.divImage{
+  width: 240px;
+  height: 350px;
+  display: flex;
+}
+
+.divImage > img{
+  object-fit: cover;
+  width: 100%; /*Todas las imagenes del mismo tamaño*/
+}
+
+
